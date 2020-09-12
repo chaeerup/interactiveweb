@@ -17,10 +17,18 @@ p {
 }
 
 .global-nav {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
 	height: 44px;
 	padding: 0 1rem;
 }
 .local-nav {
+	position: absolute;
+	top: 45px;
+	left: 0;
+	width: 100%;
 	height: 52px;
 	padding: 0 1rem;
 	border-bottom : 1px solid #ddd;
@@ -48,12 +56,13 @@ p {
 	margin-left: 2em;
 	font-size: 1rem;
 }
-.global-nav-links a, .local-nav-links a {
+a {
 	color : rgb(29, 29, 31);
 	text-decoration: none;
 }
 .scroll-section {
 	padding-top: 50vh;
+	border: 3px solid red;
 }
 #scroll-section-0 h1 {
 	font-size: 4rem;
@@ -63,9 +72,11 @@ p {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	top: 35vh;
 	margin: 5px 0;
 	height: 3em;
 	font-size: 2.5rem;
+	opacity: 0;
 }
 .main-message p {
 	line-height: 1.2;
@@ -125,13 +136,12 @@ p {
 	align-items: center;
 	justify-content: center;
 	height: 7rem;
-	background-color: tan;
+	background-color: rgb(87, 66, 39);
 	color: white;
 }
 .sticky-elem {
 	display: none;
 	position: fixed;
-	top: 0;
 	left: 0;
 	width: 100%;
 }
